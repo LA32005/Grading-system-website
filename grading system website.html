@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grading system website.css">
+    <title>Average Calculator</title>
+</head>
+<body>
+    <nav>
+        <a href="#" class="title">Average Calculator</a>
+        <img src="calcu.jpg" width="100" height="50">
+        <a href="#" class="links">Home</a>
+        <a href="#" class="links">About</a>
+        <a href="#" class="links">Contact Us</a>
+    </nav>
+
+    <div class="main">
+        <div class="header"><h1>Student Grading System</h1></div>
+    </div>
+
+    <form id="grading_system">
+        <div class="content">
+            <div class="data">
+                <label>Student Name:</label>
+                <input type="text" id="name">
+                <label id="label_course">Course:</label>
+                <input type="text" id="course">
+            </div>
+
+            <img class="calcu" src="images/calcu.jpg" style="float:right; width:500px">
+            <div id="prelim">
+                <label>Enter Prelim Quiz 1:</label>
+                <input type="text" id="pq1" class="box">
+                <label>Enter Prelim Quiz 2:</label>
+                <input type="text" id="pq2" class="box">
+                <label>Enter Prelim Attendance:</label>
+                <input type="text" id="patt" class="box">
+                <label>Enter Prelim Assignment:</label>
+                <input type="text" id="assp" class="box">
+                <label>Enter Prelim Project:</label>
+                <input type="text" id="pproj" class="box">
+                <label>Enter Prelim Seatwork:</label>
+                <input type="text" id="psw" class="box">
+                <label>Enter Prelim Major exam:</label>
+                <input type="text" id="pme" class="box">
+            </div>
+
+            <img class="logo" src="images/logo.jpg" style="float:right; width:400px">
+            <div id="midterm">
+                <label>Enter Midterm Quiz 1:</label>
+                <input type="text" id="mq1" class="box">
+                <label>Enter Midterm Quiz 2:</label>
+                <input type="text" id="mq2" class="box">
+                <label>Enter Midterm Attendance:</label>
+                <input type="text" id="matt" class="box">
+                <label>Enter Midterm Assignment:</label>
+                <input type="text" id="mass" class="box">
+                <label>Enter Midterm Project:</label>
+                <input type="text" id="mproj" class="box">
+                <label>Enter Midterm Seatwork:</label>
+                <input type="text" id="msw" class="box">
+                <label>Enter Midterm Major exam:</label>
+                <input type="text" id="mme" class="box">
+            </div>
+
+            <img class="operation" src="images/operations.jpg" style="float:right; width:300px">
+            <div id="finals">
+                <label>Enter Finals Quiz 1:</label>
+                <input type="text" id="fq1" class="box">
+                <label>Enter Finals Quiz 2:</label>
+                <input type="text" id="fq2" class="box">
+                <label>Enter Finals Attendance:</label>
+                <input type="text" id="fatt" class="box">
+                <label>Enter Finals Assignment:</label>
+                <input type="text" id="fass" class="box">
+                <label>Enter Finals Project:</label>
+                <input type="text" id="fproj" class="box">
+                <label>Enter Finals Seatwork:</label>
+                <input type="text" id="fsw" class="box">
+                <label>Enter Finals Major exam:</label>
+                <input type="text" id="fme" class="box">
+            </div>
+
+            <div>
+                <button type="button" onclick="calculate()">Calculate</button>
+            </div>
+
+            <div id="result">
+                <label>Prelim Grade:</label>
+                <input type="text" id="PG" class="box" readonly>
+                <label>Midterm Grade:</label>
+                <input type="text" id="MG" class="box" readonly>
+                <label>Final Grade:</label>
+                <input type="text" id="FG" class="box" readonly>
+                <label>Total Grade:</label>
+                <input type="text" id="TG" class="box" readonly>
+            </div>
+        </div>
+    </form>
+
+    <script src="grading system.js"></script>
+</body>
+</html>
